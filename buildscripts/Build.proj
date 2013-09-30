@@ -262,7 +262,7 @@ limitations under the License.
 		<RemoveDir Directories="$(PackageDir)" ContinueOnError="true" />
 
 		<!-- Grab all Castle assemblies, but ignore unit test assemblies. -->
-		<CreateItem Include="$(OutputPath)Castle.*.dll;$(OutputPath)Castle.*.xml" Exclude="$(OutputPath)Castle*.Tests.dll">
+		<CreateItem Include="$(OutputPath)**\Castle.*.dll;$(OutputPath)**\Castle.*.xml" Exclude="$(OutputPath)Castle*.Tests.dll">
 			<Output TaskParameter="Include" ItemName="_CastleDependencies"/>
 		</CreateItem>
 
