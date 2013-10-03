@@ -1,0 +1,1 @@
+NuGet.exe pack Castle.Components.Validator/Castle.Components.Validator.nuspec
